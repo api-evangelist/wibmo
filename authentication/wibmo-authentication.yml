@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.wibmo.com/reference
+docs: https://developer.wibmo.com/docs/getting-started
+notes: >-
+  Wibmo publishes no machine-readable OpenAPI, so this profile is captured from the developer
+  reference. The Prepaid / Token Hub / Wallet APIs use a request-and-response payload encryption
+  model: each functional operation is paired with a dedicated "Encrypt API" (to encrypt the request
+  body) and "Decrypt API" (to decrypt the response), keyed on merchant/issuer credentials issued by
+  Wibmo during onboarding. This is an encryption-envelope scheme rather than OAuth2 or a simple
+  bearer key.
+summary:
+  types: [payload-encryption]
+  api_key_in: []
+  oauth2_flows: []
+schemes:
+  - name: payloadEncryption
+    type: custom
+    scheme: encrypt-decrypt-envelope
+    description: >-
+      Per-operation Encrypt and Decrypt APIs wrap the request/response payloads; credentials are
+      provisioned by Wibmo at onboarding. Evidenced by the Encrypt/Decrypt operation pairs across
+      Prepaid customer onboarding, card management, and wallet management in the API reference.
+    sources: [developer.wibmo.com/reference]

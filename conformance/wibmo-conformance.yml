@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: https://wibmo.co/security-and-privacy/
+notes: >-
+  Compliance and certification posture published on Wibmo's Security & Privacy page. Wibmo is a
+  PCI-focused payment security provider (Areion gateway, ACCOSA IVS 3-D Secure server, Token Hub
+  tokenization). Cross-cutting API standards below are derived from the documented product surface;
+  no machine-readable OpenAPI is published, so standards are asserted from the developer docs.
+standards:
+  - id: pci-dss
+    conforms: true
+    evidence: 'Security & Privacy page states PCI DSS compliance (6 goals, 12 requirements, 300+ sub-requirements)'
+  - id: pci-3ds
+    conforms: true
+    evidence: 'PCI 3DS compliant for Card-Not-Present authentication (ACCOSA IVS 3-D Secure server)'
+  - id: pci-ssf-sslc
+    conforms: true
+    evidence: 'PCI Software Security Framework (Secure SLC / SSLC) certified'
+  - id: iso-27701
+    conforms: true
+    evidence: 'ISO/IEC 27701 (Privacy Information Management System) certified, controller and processor scope'
+  - id: gdpr
+    conforms: true
+    evidence: 'Security & Privacy page states GDPR-ready posture'
+  - id: emv-3ds
+    conforms: true
+    evidence: 'Payment Gateway documents EMV 3-D Secure authentication and authorization flows'
+  - id: oauth2
+    conforms: false
+    evidence: 'developer docs describe a payload encrypt/decrypt auth pattern, not OAuth2'
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: 'no published OpenAPI or application/problem+json error contract found'

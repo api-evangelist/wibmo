@@ -1,7 +1,13 @@
 aid: wibmo
 name: WIBMO
-description: 'WIBMO is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Wibmo is a full-stack PayTech company (acquired by PayU / Naspers in 2019) providing
+  payment security, digital payments, and digital financial services to banks, fintechs, and
+  businesses worldwide. Its platforms and products include the Areion Payment Gateway, Token Hub
+  tokenization, Trident FRM fraud risk management, Tridentity identity and multi-factor
+  authentication, the ACCOSA IVS 3-D Secure authentication server, and a white-label digital wallet
+  and prepaid card-issuing platform. The Wibmo developer portal documents Token Hub, Payment Gateway
+  (3-D Secure authentication and authorization), Prepaid card issuance and lifecycle management, Fraud
+  Risk Management, DFS/Wallet, and Android and iOS MFA (Tridentity) SDKs.'
 url: https://raw.githubusercontent.com/api-evangelist/wibmo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,18 +15,87 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://wibmo.com/wp-content/uploads/2023/01/wibmo-logo.png
 tags:
 - Company
 - Consumer
-apis: []
+- Payments
+- Fintech
+- Payment Gateway
+- Tokenization
+- Fraud Detection
+- 3-D Secure
+- Authentication
+- Digital Wallet
+- Prepaid Cards
+- India
+apis:
+- name: Wibmo Developer Platform
+  description: 'Documented product APIs across Token Hub tokenization, the Areion Payment Gateway
+    (3-D Secure authentication and authorization), Prepaid card issuance/lifecycle/transaction
+    management, Fraud Risk Management, and DFS/Wallet, plus Android and iOS Tridentity MFA SDKs.
+    Requests use a payload encrypt/decrypt pattern (per-operation Encrypt and Decrypt APIs).'
+  humanURL: https://developer.wibmo.com/reference
+  properties:
+  - type: Documentation
+    url: https://developer.wibmo.com/docs
+  - type: APIReference
+    url: https://developer.wibmo.com/reference
+  - type: GettingStarted
+    url: https://developer.wibmo.com/docs/getting-started
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wibmo-domain-security.yml
 - type: Website
-  url: http://www.wibmo.co/
+  url: https://wibmo.com/
+- type: DeveloperPortal
+  url: https://developer.wibmo.com/
+- type: Documentation
+  url: https://developer.wibmo.com/docs
+- type: APIReference
+  url: https://developer.wibmo.com/reference
+- type: GettingStarted
+  url: https://developer.wibmo.com/docs/getting-started
+- type: Blog
+  url: https://wibmo.co/blogs/
+- type: Support
+  url: https://wibmo.co/contact-us/
+- type: PrivacyPolicy
+  url: https://wibmo.co/privacy-policy/
+- type: LLMsTxt
+  url: llms/wibmo-llms.txt
+- type: Authentication
+  url: authentication/wibmo-authentication.yml
+- type: Conformance
+  url: conformance/wibmo-conformance.yml
+- type: Compliance
+  url: https://wibmo.co/security-and-privacy/
+- type: Packages
+  url: packages/wibmo-packages.yml
+- type: SDKs
+  url: packages/wibmo-packages.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

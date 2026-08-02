@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: derived
+source: https://developer.wibmo.com/docs
+notes: >-
+  First-party mobile SDKs documented on the Wibmo developer portal for the Tridentity multi-factor
+  authentication solution. Distributed via Wibmo onboarding / developer docs rather than a public
+  package registry (npm/Maven Central/CocoaPods listings were not discoverable), so registry is
+  recorded as "docs" and url points at the integration guide.
+packages:
+  - language: java
+    platform: android
+    registry: docs
+    name: Tridentity Android SDK
+    url: https://developer.wibmo.com/docs/android-sdks
+    official: true
+  - language: swift
+    platform: ios
+    registry: docs
+    name: Tridentity iOS SDK
+    url: https://developer.wibmo.com/docs/ios-sdks
+    official: true
